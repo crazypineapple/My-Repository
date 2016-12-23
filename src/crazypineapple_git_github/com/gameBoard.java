@@ -15,6 +15,14 @@ public class gameBoard {
 		board[y][x] = piece;
 	}
 	
+	public void removePiece(int x, int y){
+		board[y][x] = null;
+	}
+	
+	public pieceChess getPiece(int x, int y){
+		return board[y][x];
+	}
+	
 //	public static void main(String[]args){
 //		pieceChess[][] lboard = new pieceChess[8][8];
 //		for (int y=0; y<lboard.length;y++)
